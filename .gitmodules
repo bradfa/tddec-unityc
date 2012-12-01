@@ -1,0 +1,3 @@
+[submodule "unityc"]
+	path = unityc
+	url = git://github.com/bradfa/unityc.git
