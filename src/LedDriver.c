@@ -26,8 +26,6 @@
 
 
 #include "LedDriver.h"
-#include "RuntimeError.h"
-
 
 enum {ALL_LEDS_OFF = 0, ALL_LEDS_ON = ~0};
 
@@ -51,7 +49,6 @@ static BOOL IsLedOutOfBounds(int ledNumber)
 {
     if ((ledNumber < FIRST_LED) || (ledNumber > LAST_LED))
         {
-            RUNTIME_ERROR("LED Driver: out-of-bounds LED", ledNumber);
             return TRUE;
         }
     return FALSE;
