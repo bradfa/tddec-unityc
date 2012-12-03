@@ -12,7 +12,7 @@ submodule of the unityc repo
 
 ```
 git submodule add git://github.com/bradfa/unityc.git
-git commit -a -m "Added unityc submodule"
+git commit -m "Add unityc submodule"
 ```
 
 and then modify the Makefile to suit your build configuration.
