@@ -49,26 +49,3 @@ TEST_GROUP_RUNNER(LedDriver)
 }
 #endif 
 
-#if 0 
-TEST_GROUP_RUNNER(LedDriver)
-{
-    RUN_TEST_CASE(LedDriver, LedsOffAfterCreate);
-    RUN_TEST_CASE(LedDriver, TurnOnLedOne);
-}
-#endif 
-
-#if 0 
-TEST_GROUP_RUNNER(LedDriver)
-{
-    RUN_TEST_CASE(LedDriver, LedsOffAfterCreate);
-    RUN_TEST_CASE(LedDriver, TurnOnLedOne);
-    RUN_TEST_CASE(LedDriver, TurnOffLedOne);
-}
-#endif 
-
-#if 0 
-TEST_GROUP_RUNNER(LedDriver)
-{
-    RUN_TEST_CASE(LedDriver, LedsOffAfterCreate);
-}
-#endif 
