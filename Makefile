@@ -11,11 +11,8 @@ UNITYC_INCLUDE_DIR=$(UNITYC_DIR)/include
 OUTPUT_DIR=./output
 
 OBJS=$(wildcard $(SOURCES_DIR)/*)
-OUT_OBJS=$(addprefix $(OUTPUT_DIR)/,$(OBJS))
 TEST_OBJS=$(wildcard $(TESTS_DIR)/*)
-OUT_TEST_OBJS=$(addprefix $(OUTPUT_DIR)/,$(TEST_OBJS))
 UNITYC_OBJS=$(wildcard $(UNITYC_SOURCES_DIR)/*)
-OUT_UNITYC_OBJS=$(addprefix $(OUTPUT_DIR)/,$(UNITYC_OBJS))
 
 $(OUTPUT_DIR)/%.o : $(SOURCES_DIR)/%.c $(TESTS_DIR)/%.c $(UNITYC_SOURCES_DIR)/%.c
 	$(CC) -c $< -I$(INCLUDE_DIR) -o $@
